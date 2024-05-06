@@ -3,25 +3,18 @@
 @tailwind utilities;
 
 :root {
-  /* CSS HEX */ 
-  --space-cadet: #1f2041ff; 
-  --english-violet: #4b3f72ff; 
-  --viridian: #417b5aff; 
-  --bone: #d0cebaff; 
+  /* CSS HEX */
+  --space-cadet: #1f2041ff;
+  --english-violet: #4b3f72ff;
+  --viridian: #417b5aff;
+  --bone: #d0cebaff;
   --champagne-pink: #e9d2c0ff;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 body {
   color: var(--champagne-pink);
   background: var(--space-cadet);
+  height: 100vh;
 }
 
 @layer utilities {
@@ -29,8 +22,23 @@ body {
     text-wrap: balance;
   }
 }
+
+.svg-draw path {
+  animation: draw 2s linear forwards;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: [Length of the path];
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
 .custom-bg {
-  background-image: url('/backgroundVector.png');
-  background-size: 150%;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
