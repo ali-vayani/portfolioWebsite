@@ -1,9 +1,9 @@
-import { Inter, Cabin, Share_Tech_Mono } from "next/font/google";
+import { Inter, Cabin, Share_Tech_Mono, VT323 } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const cabin = Cabin({ subsets: ["latin"], weights: ["400", "500", "600", "700"], italic:["normal", "italic"] });
-const ShareTechMono = Share_Tech_Mono({subsets: ["latin"], weight: "400"})
+const ShareTechMono = VT323({subsets: ["latin"], weight: "400"})
 
 export const metadata = {
   title: "Ali Vayani",

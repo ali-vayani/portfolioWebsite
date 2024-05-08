@@ -41,10 +41,10 @@ export default function Home() {
       </div>
       <div className="flex flex-col text-8xl leading-snug mt-44">
         <span>
-          Hey, I'm <span className="font-bold  text-customPurple">Ali Vayani,</span>
+          hey, i'm <span className="font-bold  text-customPurple">ali vayani,</span>
         </span>
         <span>
-          A <span className="font-bold  text-customGreen">Computer Science</span>
+          a <span className="font-bold  text-customGreen">computer science</span>
         </span>
         <span>
           student at <span className="font-bold  text-customOrange">UT Austin</span>
