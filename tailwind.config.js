@@ -14,9 +14,10 @@ module.exports = {
       },
     },
     colors: {
-      "customPurple": "#f7f7f7",
-      "customGreen": "#f7f7f7",
-      "customOrange": "#f0b289"
+      "customBlue": "#141414",
+      "customGreen": "#47A639",
+      "customRed": "#d82d17",
+      "customYellow": "#edcb1f" 
     }
   },
   plugins: [],
