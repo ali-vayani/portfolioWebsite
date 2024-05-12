@@ -5,9 +5,16 @@ import Image from 'next/image';
 export default function Home() {
 
   useEffect(() => {
+    let tileSize = 50;
+    if(window.innerWidth < 1000)
+      tileSize = 35;
+    else if(window.innerWidth < 700)
+      tileSize = 25;
+    else if(window.innerWidth < 450)
+      tileSize = 10;
     const screen = document.getElementById("tiles");
-    let columns = Math.floor(window.innerWidth / 50);
-    let rows = Math.floor(window.innerHeight / 50);
+    let columns = Math.floor(window.innerWidth / tileSize);
+    let rows = Math.floor(window.innerHeight / tileSize);
     let backgroundColors = ["#AD343E", "#593C8F", "#F2AF29", "#00A676"];
   
     screen.style.setProperty("--columns", columns);
