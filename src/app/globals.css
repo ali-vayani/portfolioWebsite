@@ -44,6 +44,17 @@ body {
     transform: scale(1.075); 
   }
 }
+@keyframes onHover {
+  0% { 
+    filter: drop-shadow(0 0 20px #f7f7f7); 
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.dropShadow{
+  filter: drop-shadow(0 0 20px rgb(247, 247, 247, .25)); 
+}
 .downArrow {
   height: auto;
   display: block;
@@ -51,11 +62,13 @@ body {
   border-radius: 10px; 
   filter: drop-shadow(0 0 20px #f7f7f7); 
   animation: breath 3s infinite ease-in-out;
-  opacity: 75%;
-  margin-top: 100px;
+  opacity: 85%;
+  margin-top: 120px;
 }
 .downArrow:hover {
   cursor: pointer;
+  animation: onHover 2s ease-in;
+  opacity: 100%;
 }
 
 #tiles {
@@ -66,6 +79,7 @@ body {
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: repeat(var(--rows), 1fr);
   z-index: -1;
+  filter: blur(1.5px);
 }
 
 .tile {

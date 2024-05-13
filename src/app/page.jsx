@@ -15,7 +15,7 @@ export default function Home() {
     const screen = document.getElementById("tiles");
     let columns = Math.floor(window.innerWidth / tileSize);
     let rows = Math.floor(window.innerHeight / tileSize);
-    let backgroundColors = ["#AD343E", "#593C8F", "#F2AF29", "#00A676"];
+    let backgroundColors = ["#AD343E", "#593C8F", "#FF9505", "#00A676"];
   
     screen.style.setProperty("--columns", columns);
     screen.style.setProperty("--rows", rows);
@@ -82,12 +82,6 @@ export default function Home() {
   
     // Interval to periodically update the grid
     const intervalId = setInterval(() => {
-      // Assuming a simple decision: more tiles to add if addRate > removeRate, etc.
-      // if (addRate > removeRate) {
-      //   changeColor(); // Add a color (simulating adding a tile with a new color)
-      // } else {
-      //   removeColor(); // Remove a color (simulating removing a tile)
-      // }
       changeRate()
     }, 2000);
   
@@ -115,11 +109,11 @@ export default function Home() {
     <div className="screen">
       <div id="tiles"></div>
       <div className="flex justify-between px-20 mt-6 w-full">
-        <span className="text-3xl">résumé</span>
-        <span className="text-3xl">about</span>
-        <span className="text-3xl">projects</span>
+        <span className="text-3xl dropShadow">résumé</span>
+        <span className="text-3xl dropShadow">about</span>
+        <span className="text-3xl dropShadow">projects</span>
       </div>
-      <div className="flex flex-col text-8xl leading-snug mt-64">
+      <div className="flex flex-col text-8xl leading-snug mt-64 dropShadow">
         Ali Vayani
       </div>
       <Image
@@ -128,7 +122,11 @@ export default function Home() {
         height={50}
         className='downArrow'
       />
-      <div class="screen-overlay"></div>
+      <div className='flex flex-col w-full justify-center items-center h-screen'>
+        <h1 className='text-6xl mb-4'>About Me</h1>
+        <span className='text-center text-xl px-32 my-2'>Hey! I’m Ali, a freshman at UT Austin where I'm studying Computer Science. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people's lives easier.</span>
+        <span className='text-center text-xl px-32 my-2'>Outside of coding, you’ll find me enjoying the simple pleasures of life, whether that's indulging my massive sweet tooth or making memories with friends at 2 am. I thrive on humor and good vibes, always trying to make the mood light. Despite my lighthearted approach, I value the lessons learned from life’s heavier moments, such as finding momentum in personal challenges or being someone anyone can talk to.</span>
+      </div>
     </div>
   );
 }
