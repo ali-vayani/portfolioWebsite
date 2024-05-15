@@ -121,8 +121,9 @@ export default function Home() {
         width={50}
         height={50}
         className='downArrow'
+        onClick={() => {document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'start' });}}
       />
-      <div className='flex flex-col w-full justify-center items-center h-screen'>
+      <div className='flex flex-col w-full justify-center items-center h-screen' id='about'>
         <h1 className='text-6xl mb-4'>About Me</h1>
         <span className='text-center text-xl px-32 my-2'>Hey! I’m Ali, a freshman at UT Austin where I'm studying Computer Science. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people's lives easier.</span>
         <span className='text-center text-xl px-32 my-2'>Outside of coding, you’ll find me enjoying the simple pleasures of life, whether that's indulging my massive sweet tooth or making memories with friends at 2 am. I thrive on humor and good vibes, always trying to make the mood light. Despite my lighthearted approach, I value the lessons learned from life’s heavier moments.</span>
