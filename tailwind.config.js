@@ -17,7 +17,8 @@ module.exports = {
       "customBlue": "#141414",
       "customGreen": "#47A639",
       "customRed": "#d82d17",
-      "customYellow": "#edcb1f" 
+      "customYellow": "#edcb1f",
+      "panelBg": "#2E2E2E" 
     }
   },
   plugins: [],
