@@ -3,7 +3,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const cabin = Cabin({ subsets: ["latin"], weights: ["400", "500", "600", "700"], italic:["normal", "italic"] });
-const ShareTechMono = Poppins({subsets: ["latin"], weight: "400"})
+const poppins = Poppins({subsets: ["latin"], weight: ["400", "500", "600", "700"]})
 
 export const metadata = {
   title: "Ali Vayani",
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ShareTechMono.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }

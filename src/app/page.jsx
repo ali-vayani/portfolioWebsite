@@ -1,6 +1,7 @@
 'use client'
 import { useEffect } from 'react';
 import Image from 'next/image';
+import Square from './square';
 
 export default function Home() {
 
@@ -130,7 +131,7 @@ export default function Home() {
       </div>
       <div className='flex flex-col w-full justify-center items-center h-screen'>
         <h1 className='text-6xl mb-4'>Experience</h1>
-
+        {/* <Square imagePath={}/> */}
       </div>
     </div>
   );
