@@ -18,7 +18,8 @@ module.exports = {
       "customGreen": "#47A639",
       "customRed": "#d82d17",
       "customYellow": "#edcb1f",
-      "panelBg": "#2E2E2E" 
+      "panelBg": "#2E2E2E",
+      "panelBorder": "#393939"
     }
   },
   plugins: [],
