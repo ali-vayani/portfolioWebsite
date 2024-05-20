@@ -111,8 +111,8 @@ export default function Home() {
       <div id="tiles"></div>
       <div className="flex justify-between px-20 mt-6 w-full">
         <span className="text-3xl dropShadow">résumé</span>
-        <span className="text-3xl dropShadow">about</span>
-        <span className="text-3xl dropShadow">projects</span>
+        <span className="text-3xl dropShadow hover:cursor-pointer" onClick={() => {document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'start' });}}>about</span>
+        <span className="text-3xl dropShadow hover:cursor-pointer" onClick={() => {document.getElementById('experience').scrollIntoView({ behavior: 'smooth', block: 'start' });}}>projects</span>
       </div>
       <div className="flex flex-col text-8xl leading-snug mt-64 dropShadow">
         Ali Vayani
@@ -129,7 +129,7 @@ export default function Home() {
         <span className='text-center text-xl px-32 my-2'>Hey! I’m Ali, a freshman at UT Austin where I'm studying Computer Science. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people's lives easier.</span>
         <span className='text-center text-xl px-32 my-2'>Outside of coding, you’ll find me enjoying the simple pleasures of life, whether that's indulging my massive sweet tooth or making memories with friends at 2 am. I thrive on humor and good vibes, always trying to make the mood light. Despite my lighthearted approach, I value the lessons learned from life’s heavier moments.</span>
       </div>
-      <div className='flex flex-col w-full justify-center items-center h-screen mb-8'>
+      <div className='flex flex-col w-full justify-center items-center h-screen mb-8' id='experience'>
         <h1 className='text-6xl mb-8'>Experience</h1>
         <div className='grid grid-cols-3 gap-4'>
           <Square 
