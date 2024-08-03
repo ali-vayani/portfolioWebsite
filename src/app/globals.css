@@ -2,96 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+  background-color: #0D0B10;
+}
+.test {
+  background: linear-gradient(to bottom, 
+                            rgba(13, 11, 16, 1) 0%, 
+                            rgba(13, 11, 16, 1) 15%, 
+                            rgba(13, 11, 16, 0) 35%, 
+                            rgba(13, 11, 16, 0) 65%, 
+                            rgba(13, 11, 16, 1) 85%, 
+                            rgba(13, 11, 16, 1) 100%);
+
+  z-index: -1;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-:root {
-  --black: #141414;
-  --white: #f7f7f7;
-  --blue: #4398cd;
-}
-
-body {
-  height: 100vh;
+.grid-container {
   display: grid;
-  place-items: center;
-  background-color: var(--black);
-  margin: 0rem;
-  color: var(--white);
-  overflow-x: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 20px;
+  padding: 20px; */
 }
 
-.screen {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 10;
-  justify-content: top;
-  align-items: center;
+@keyframes drawIn {
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
-@keyframes breath {
-  0%, 100% {
-    transform: scale(1);  
-    filter: drop-shadow(0 0 20px #f7f7f7); 
-  }
-  50% {
-    transform: scale(1.075); 
-  }
-}
-@keyframes onHover {
-  0% { 
-    filter: drop-shadow(0 0 20px #f7f7f7); 
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-.dropShadow{
-  filter: drop-shadow(0 0 20px rgb(247, 247, 247, .25)); 
-}
-.downArrow {
-  height: auto;
-  display: block;
-  margin: 50px auto;
-  border-radius: 10px; 
-  filter: drop-shadow(0 0 20px #f7f7f7); 
-  animation: breath 3s infinite ease-in-out;
-  opacity: 85%;
-  margin-top: 120px;
-}
-.downArrow:hover {
-  cursor: pointer;
-  animation: onHover 2s ease-in;
-  opacity: 100%;
-}
-
-#tiles {
-  width: 100vw;
-  height: 100vh; 
-  position: fixed;
-  display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: repeat(var(--rows), 1fr);
-  z-index: -1;
-  /* filter: blur(.5px); */
-}
-
-.tile {
-  width: 100%;
-  height: 100%;
-}
-.extraSmall {
-  font-size: 12px;
-}
-.w-88 {
-  width: 22rem;
-}
 
 @keyframes panelOnHover {
   0% { 

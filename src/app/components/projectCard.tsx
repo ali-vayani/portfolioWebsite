@@ -1,19 +1,29 @@
+"use client"
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function Square({imagePath, title, blurb, techStack, comingSoon}) {
+interface projectCard {
+    imagePath: string;
+    title: string;
+    blurb: string;
+    techStack: string[];
+    comingSoon: boolean;
+}
+
+export default function ProjectCard({imagePath, title, blurb, techStack, comingSoon}: projectCard) {
 
     if(!comingSoon)
     {
         return (
             <div 
-                className='border-2 bg-panelBg/70 flex flex-col rounded-xl border-panelBorder items-center text-center min-h-fit p-3 w-88 hover:cursor-pointer panel'
+                className='border-2 bg-accent/40 flex flex-col rounded-xl border-accent/70 items-center text-center min-h-fit p-3 w-88 hover:cursor-pointer panel text-text'
                 onClick={() => window.open('https://the-heat.vercel.app/', '_blank')}
             >
                 <Image
                     src={imagePath}
                     width={175}
                     height={175}
+                    alt=''
                 />
                 <h2 className='font-bold text-xl my-2'>{title}</h2>
                 <h4 className='text-md w-10/12'>{blurb}</h4>
@@ -54,7 +64,7 @@ export default function Square({imagePath, title, blurb, techStack, comingSoon})
             updateInProgress();
         }, 1000);
         return (
-            <div className='border-2 bg-panelBg/70 flex flex-col rounded-xl border-panelBorder justify-center items-center text-center min-h-80 p-3 w-88'>
+            <div className='border-2 bg-accent/40 flex flex-col rounded-xl border-accent/70 justify-center items-center text-center min-h-80 p-3 w-88 text-text'>
                 <h2 className='font-bold text-3xl'>{inProgress}</h2>
             </div>
         )
