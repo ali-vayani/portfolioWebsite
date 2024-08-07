@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import DashedLine from "./components/dashedLine";
 import MeetCard from "./components/meetCard";
@@ -8,10 +8,6 @@ import ProjectCard from "./components/projectCard";
 import WavySVG from "./components/WavySVG";
 
 export default function Home() {
-
-  const [prevPosition, setPrevPosition] = useState(0);
-  const [currentPosition, setCurrentPosition] = useState(0)
-
 
   useEffect(() => {
     const snapContainer = document.getElementById('snap-container');
@@ -72,10 +68,10 @@ export default function Home() {
       <section className="flex flex-col min-h-screen relative snap-start snap-always">
         <div className="w-full h-full flex flex-col justify-center pr-36 items-end">
           <h1 className="text-text text-7xl mb-12"><span className="text-accent">About</span> Me!</h1>
-          <p className="text-text text-2xl text-end tracking-wide leading-tight w-1/2 ">
-          Hey! I’m Ali, a freshman at <span className="text-accent">UT Austin</span> where I'm studying <span className="text-accent">Computer Science</span>. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people's lives easier. 
-          <br/><br/>
-          Outside of coding, you’ll find me enjoying the <span className="text-accent">simple</span> pleasures of life, whether that's indulging my massive sweet tooth or making memories with friends and family. I <span className="text-accent">thrive</span> on humor and good vibes, always trying to make the mood <span className="text-accent">light</span>. Despite my lighthearted approach, I value the lessons learned from life’s <span className="text-accent">heavier moments</span>. 
+          <p>
+            Hey! I’m Ali, a freshman at <span className="text-accent">UT Austin</span> where I&apos;m studying <span className="text-accent">Computer Science</span>. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people&apos;s lives easier.
+            <br/><br/>
+            Outside of coding, you’ll find me enjoying the <span className="text-accent">simple</span> pleasures of life, whether that&apos;s indulging my massive sweet tooth or making memories with friends and family. I <span className="text-accent">thrive</span> on humor and good vibes, always trying to make the mood <span className="text-accent">light</span>. Despite my lighthearted approach, I value the lessons learned from life’s <span className="text-accent">heavier moments</span>.
           </p>
           <WavySVG/>
         </div>
@@ -92,12 +88,13 @@ export default function Home() {
                 blurb={"Developed ordering platform for school cafeteria & admin panel to edit menu items"} 
                 techStack={["next.js", "firebase"]}
                 comingSoon={false}
+                key={0}
               />
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]}/>
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]}/>
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]}/>
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]}/>
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]}/>
+                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={1}/>
+                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={2}/>
+                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={3}/>
+                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={4}/>
+                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={5}/>
             </div>
           </div>
         </div>
