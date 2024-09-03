@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import DashedLine from "./components/dashedLine";
-import MeetCard from "./components/meetCard";
+import { Github, Linkedin } from "lucide-react";
 import AnimatedSVG from "./components/animatedSVG";
 import ProjectCard from "./components/projectCard";
 import WavySVG from "./components/WavySVG";
@@ -84,7 +84,17 @@ export default function Home() {
 
 
       <DashedLine/>
-      <h1 className="text-text text-3xl fixed p-6">vayani</h1>
+      <div className="fixed w-full flex justify-between items-center p-6 z-50">
+        <h1 className="text-text text-3xl">vayani</h1>
+        <div className="flex space-x-4">
+          <a href="https://github.com/ali-vayani" target="_blank" rel="noopener noreferrer" className="z-50">
+            <Github className="text-text hover:text-accent z-10" size={32} />
+          </a>
+          <a href="https://www.linkedin.com/in/ali-vayani-76a566301/" target="_blank" rel="noopener noreferrer" className="z-50">
+            <Linkedin className="text-text hover:text-accent z-10" size={32} />
+          </a>
+        </div>
+      </div>
       <section className="flex flex-col min-h-screen snap-start snap-always relative">
         <div className="w-full h-full flex flex-col justify-center pl-48">
           <h1 className="text-text text-7xl mb-6">Hey! I’m <span className="text-accent">Ali</span>!</h1>
@@ -113,7 +123,7 @@ export default function Home() {
               <StackedImageCard images={displayImages}/>
             </div>
             <div className="w-1/2 flex items-center pr-36">
-            <p className="text-text text-2xl text-left tracking-wide leading-tight">
+            <p className="text-text text-2xl text-left tracking-wide leading-tight z-10">
               Hey! I&apos;m Ali, a freshman at <span className="text-accent">UT Austin</span> where I&apos;m studying <span className="text-accent">Computer Science</span>. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people&apos;s lives easier.
               <br/><br/>
               Outside of coding, you&apos;ll find me enjoying the <span className="text-accent">simple</span> pleasures of life, whether that&apos;s indulging my massive sweet tooth or making memories with friends and family. I <span className="text-accent">thrive</span> on humor and good vibes, always trying to make the mood <span className="text-accent">light</span>. Despite my lighthearted approach, I value the lessons learned from life&apos;s <span className="text-accent">heavier moments</span>.
@@ -150,7 +160,7 @@ export default function Home() {
 
       <div className="flex flex-col min-h-[40vh] text-text pl-48 relative ">
         <h3 className="text-5xl">Have <span className="text-accent">Questions</span>?</h3>
-        <h2 className="text-4xl absolute bottom-[7rem]"> hello@<span className="text-accent">vayani</span>.dev</h2>
+        <h2 className="text-4xl absolute bottom-[7rem]"> ali.<span className="text-accent">vayani</span>@utexas.edu</h2>
         <h1 className="text-[14rem] text-text/10 absolute bottom-0 right-10">vayani</h1>
       </div>
     </div>
