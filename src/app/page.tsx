@@ -113,11 +113,12 @@ export default function Home() {
               <StackedImageCard images={displayImages}/>
             </div>
             <div className="w-1/2 flex items-center pr-36">
-              <p className="text-text text-2xl text-left tracking-wide leading-tight">
-                Hey! I'm Ali, a freshman at <span className="text-accent">UT Austin</span> where I'm studying <span className="text-accent">Computer Science</span>. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people's lives easier.
-                <br/><br/>
-                Outside of coding, you'll find me enjoying the <span className="text-accent">simple</span> pleasures of life, whether that's indulging my massive sweet tooth or making memories with friends and family. I <span className="text-accent">thrive</span> on humor and good vibes, always trying to make the mood <span className="text-accent">light</span>. Despite my lighthearted approach, I value the lessons learned from life's <span className="text-accent">heavier moments</span>.
-              </p>
+            <p className="text-text text-2xl text-left tracking-wide leading-tight">
+              Hey! I&apos;m Ali, a freshman at <span className="text-accent">UT Austin</span> where I&apos;m studying <span className="text-accent">Computer Science</span>. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people&apos;s lives easier.
+              <br/><br/>
+              Outside of coding, you&apos;ll find me enjoying the <span className="text-accent">simple</span> pleasures of life, whether that&apos;s indulging my massive sweet tooth or making memories with friends and family. I <span className="text-accent">thrive</span> on humor and good vibes, always trying to make the mood <span className="text-accent">light</span>. Despite my lighthearted approach, I value the lessons learned from life&apos;s <span className="text-accent">heavier moments</span>.
+            </p>
+
             </div>
           </div>
         </div>
