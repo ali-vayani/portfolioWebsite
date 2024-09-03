@@ -1,42 +1,71 @@
 'use client'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import DashedLine from "./components/dashedLine";
 import MeetCard from "./components/meetCard";
 import AnimatedSVG from "./components/animatedSVG";
 import ProjectCard from "./components/projectCard";
 import WavySVG from "./components/WavySVG";
+import StackedImageCard from "./components/StackedImageCard";
+
+import dealImage from "../../public/deal.png"
+import froyoImage from "../../public/froyo.png"
+import nycImage from "../../public/nyc.png"
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+  const [displayImages, setImages] = useState([
+    nycImage,
+    dealImage,
+    froyoImage
+  ]);
 
   useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust this breakpoint as needed
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
     const snapContainer = document.getElementById('snap-container');
     const projectsSection = document.getElementById('projects-section');
 
     const handleScroll = () => {
-        if (!projectsSection || !snapContainer) return; // Early return if projectsSection is null
+      if (!projectsSection || !snapContainer) return;
 
-        const projectsSectionTop = projectsSection.offsetTop;
-        const scrollPosition = snapContainer.scrollTop;
-        
+      const projectsSectionTop = projectsSection.offsetTop;
+      const scrollPosition = snapContainer.scrollTop;
 
-        if (scrollPosition >= projectsSectionTop) {
-            snapContainer.classList.remove('snap-y', 'snap-mandatory');
-        } else {
-            snapContainer.classList.add('snap-y', 'snap-mandatory');
-        }
+      if (scrollPosition >= projectsSectionTop) {
+        snapContainer.classList.remove('snap-y', 'snap-mandatory');
+      } else {
+        snapContainer.classList.add('snap-y', 'snap-mandatory');
+      }
     };
 
     if (snapContainer) {
-        snapContainer.addEventListener('scroll', handleScroll);
+      snapContainer.addEventListener('scroll', handleScroll);
     }
 
     return () => {
-        if (snapContainer) {
-            snapContainer.removeEventListener('scroll', handleScroll);
-        }
+      window.removeEventListener('resize', checkMobile);
+      if (snapContainer) {
+        snapContainer.removeEventListener('scroll', handleScroll);
+      }
     };
-}, []);
+  }, []);
+
+  if (isMobile) {
+    return (
+      <div className="h-screen w-full flex items-center justify-center bg-background text-text p-6">
+        <div className="text-center">
+          <h1 className="text-3xl mb-4">Please view on desktop for best experience</h1>
+          <p className="text-xl">This website is optimized for larger screens.</p>
+        </div>
+      </div>
+    );
+  }
 
 
   return (
@@ -60,21 +89,39 @@ export default function Home() {
         <div className="w-full h-full flex flex-col justify-center pl-48">
           <h1 className="text-text text-7xl mb-6">Hey! I’m <span className="text-accent">Ali</span>!</h1>
           <h3 className="text-text text-5xl mb-6">Building <span className="text-accent">innovative</span> tech <span className="text-accent">solutions</span>,<br/> <span className="text-accent">one line</span> of code at a time.</h3>
-          <button className="px-5 py-2 bg-accent text-background rounded-lg text-2xl w-40 mt-3">Welcome!</button>
+          <button 
+            className="px-5 py-2 bg-accent text-background rounded-lg text-2xl w-40 mt-3"
+            onClick={() => {
+              const targetSection = document.getElementById('targetSection');
+              if (targetSection) 
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            } 
+          >
+            
+            Welcome!
+          </button>
           <AnimatedSVG/>
         </div>
       </section>
 
-      <section className="flex flex-col min-h-screen relative snap-start snap-always">
-        <div className="w-full h-full flex flex-col justify-center pr-36 items-end">
-          <h1 className="text-text text-7xl mb-12"><span className="text-accent">About</span> Me!</h1>
-          <p className="text-text text-2xl text-end tracking-wide leading-tight w-1/2 ">
-            Hey! I’m Ali, a freshman at <span className="text-accent">UT Austin</span> where I&apos;m studying <span className="text-accent">Computer Science</span>. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people&apos;s lives easier.
-            <br/><br/>
-            Outside of coding, you’ll find me enjoying the <span className="text-accent">simple</span> pleasures of life, whether that&apos;s indulging my massive sweet tooth or making memories with friends and family. I <span className="text-accent">thrive</span> on humor and good vibes, always trying to make the mood <span className="text-accent">light</span>. Despite my lighthearted approach, I value the lessons learned from life’s <span className="text-accent">heavier moments</span>.
-          </p>
-          <WavySVG/>
+      <section id="aboutMe" className="flex flex-col min-h-screen relative snap-start snap-always">
+        <div className="w-full h-full flex flex-col">
+          <h1 className="text-text text-7xl mb-12 pl-48 pt-24"><span className="text-accent">About</span> Me!</h1>
+          <div className="flex w-full h-full">
+            <div className="w-1/2 flex items-center justify-center">
+              <StackedImageCard images={displayImages}/>
+            </div>
+            <div className="w-1/2 flex items-center pr-36">
+              <p className="text-text text-2xl text-left tracking-wide leading-tight">
+                Hey! I'm Ali, a freshman at <span className="text-accent">UT Austin</span> where I'm studying <span className="text-accent">Computer Science</span>. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people's lives easier.
+                <br/><br/>
+                Outside of coding, you'll find me enjoying the <span className="text-accent">simple</span> pleasures of life, whether that's indulging my massive sweet tooth or making memories with friends and family. I <span className="text-accent">thrive</span> on humor and good vibes, always trying to make the mood <span className="text-accent">light</span>. Despite my lighthearted approach, I value the lessons learned from life's <span className="text-accent">heavier moments</span>.
+              </p>
+            </div>
+          </div>
         </div>
+        <WavySVG/>
       </section>
       
       <section id="projects-section" className="flex flex-col mb-20 snap-start">
@@ -102,8 +149,8 @@ export default function Home() {
 
       <div className="flex flex-col min-h-[40vh] text-text pl-48 relative ">
         <h3 className="text-5xl">Have <span className="text-accent">Questions</span>?</h3>
-        <h2 className="text-7xl absolute bottom-[7rem]"> hello@<span className="text-accent">vayani</span>.dev</h2>
-        <h1 className="text-[16rem] text-text/10 absolute bottom-0 right-10">vayani</h1>
+        <h2 className="text-4xl absolute bottom-[7rem]"> hello@<span className="text-accent">vayani</span>.dev</h2>
+        <h1 className="text-[14rem] text-text/10 absolute bottom-0 right-10">vayani</h1>
       </div>
     </div>
   );
