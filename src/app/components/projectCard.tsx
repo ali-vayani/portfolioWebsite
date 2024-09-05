@@ -9,9 +9,10 @@ interface ProjectCardProps {
     blurb: string;
     techStack: string[];
     comingSoon: boolean;
+    url: string;
 }
 
-export default function ProjectCard({ imagePath, title, blurb, techStack, comingSoon }: ProjectCardProps) {
+export default function ProjectCard({ imagePath, title, blurb, techStack, comingSoon, url }: ProjectCardProps) {
     // Declare state only once at the top level
     const [inProgress, setInProgress] = useState("in the kitchen...");
     
@@ -36,14 +37,17 @@ export default function ProjectCard({ imagePath, title, blurb, techStack, coming
         return (
             <div 
                 className='border-2 bg-accent/40 flex flex-col rounded-xl border-accent/70 items-center text-center min-h-fit p-3 w-88 hover:cursor-pointer panel text-text'
-                onClick={() => window.open('https://the-heat.vercel.app/', '_blank')}
+                onClick={() => window.open(url, '_blank')}
             >
-                <Image
-                    src={imagePath}
-                    width={175}
-                    height={175}
-                    alt=''
-                />
+                <div className="w-[175px] h-[175px] flex justify-center items-center">
+                    <Image
+                        src={imagePath}
+                        width={175}
+                        height={175}
+                        alt={title}
+                        className="object-cover"
+                    />
+                </div>
                 <h2 className='font-bold text-xl my-2'>{title}</h2>
                 <h4 className='text-md w-10/12'>{blurb}</h4>
                 <div className='flex flex-row w-full justify-center mt-12 mb-1 px-10'>

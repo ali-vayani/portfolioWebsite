@@ -145,14 +145,31 @@ export default function Home() {
                 title={"The Heat Ordering Platform"} 
                 blurb={"Developed ordering platform for school cafeteria & admin panel to edit menu items"} 
                 techStack={["next.js", "firebase"]}
+                url={"https://the-heat.vercel.app/"}
                 comingSoon={false}
                 key={0}
+              />              
+              <ProjectCard
+                imagePath={"/mnist.png"} 
+                title={"MNIST Classifier"} 
+                blurb={"Built a deep neural network for MNIST digit classification and a Tkinter app for real-time user-drawn predictions."} 
+                techStack={["pytorch"]}
+                comingSoon={false}
+                url={"https://github.com/ali-vayani/pytorch/tree/main/MNIST%20Project"}
+                key={1}
               />
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={1}/>
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={2}/>
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={3}/>
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={4}/>
-                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} key={5}/>
+              <ProjectCard
+                imagePath={"/snake.jpg"} 
+                title={"Snake RL Agent"} 
+                blurb={"Developed Snake game agent using Q-learning and a neural network, with training scripts and visualizations."} 
+                techStack={["pytorch"]}
+                url={"https://github.com/ali-vayani/snake-game-rl"}
+                comingSoon={false}
+                key={2}
+              />
+                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} url="" key={3}/>
+                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} url="" key={4}/>
+                <ProjectCard comingSoon={true} imagePath="" title="" blurb="" techStack={[]} url="" key={5}/>
             </div>
           </div>
         </div>
