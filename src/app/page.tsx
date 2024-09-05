@@ -102,7 +102,7 @@ export default function Home() {
           <button 
             className="px-5 py-2 bg-accent text-background rounded-lg text-2xl w-40 mt-3"
             onClick={() => {
-              const targetSection = document.getElementById('targetSection');
+              const targetSection = document.getElementById('aboutMe');
               if (targetSection) 
                 targetSection.scrollIntoView({ behavior: 'smooth' });
               }
