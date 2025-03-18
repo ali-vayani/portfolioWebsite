@@ -46,7 +46,7 @@ export default function ProjectCard({ imagePath, title, blurb, techStack, coming
     if (!comingSoon) {
         return (
             <div 
-                className='border-2 bg-accent/40 flex flex-col rounded-xl border-accent/70 items-center text-center max-h-fit p-3 w-88 hover:cursor-pointer panel text-text'
+                className='border-2 bg-accent/40 flex flex-col rounded-xl border-accent/70 items-center text-center max-h-fit p-3 w-full md:w-88 hover:cursor-pointer panel text-text'
                 onClick={() => window.open(url, '_blank')}
             >
                 <div className="w-[175px] h-[175px] flex justify-center items-center">
@@ -75,7 +75,7 @@ export default function ProjectCard({ imagePath, title, blurb, techStack, coming
         )
     } else {
         return (
-            <div className='border-2 bg-accent/40 flex flex-col rounded-xl border-accent/70 justify-center items-center text-center min-h-80 p-3 w-88 text-text'>
+            <div className='border-2 bg-accent/40 flex flex-col rounded-xl border-accent/70 justify-center items-center text-center min-h-80 p-3 w-full md:w-88 text-text'>
                 <h2 className='font-bold text-3xl'>{inProgress}</h2>
             </div>
         )

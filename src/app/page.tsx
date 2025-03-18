@@ -56,18 +56,6 @@ export default function Home() {
     };
   }, []);
 
-  if (isMobile) {
-    return (
-      <div className="h-screen w-full flex items-center justify-center bg-background text-text p-6">
-        <div className="text-center">
-          <h1 className="text-3xl mb-4">Please view on desktop for best experience</h1>
-          <p className="text-xl">This website is optimized for larger screens.</p>
-        </div>
-      </div>
-    );
-  }
-
-
   return (
     <div id="snap-container" className="h-screen w-full flex flex-col snap-y snap-manditory overflow-y-scroll">
         <div className="opacity-30 fixed h-full w-full -z-10">
@@ -96,9 +84,9 @@ export default function Home() {
         </div>
       </div>
       <section className="flex flex-col min-h-screen snap-start snap-always relative">
-        <div className="w-full h-full flex flex-col justify-center pl-48">
-          <h1 className="text-text text-7xl mb-6">Hey! I’m <span className="text-accent">Ali</span>!</h1>
-          <h3 className="text-text text-5xl mb-6">Building <span className="text-accent">innovative</span> tech <span className="text-accent">solutions</span>,<br/> <span className="text-accent">one line</span> of code at a time.</h3>
+        <div className="w-full h-full flex flex-col justify-center pl-4 md:pl-48">
+          <h1 className="text-text text-4xl md:text-7xl mb-6">Hey! I’m <span className="text-accent">Ali</span>!</h1>
+          <h3 className="text-text text-2xl md:text-5xl mb-6">Building <span className="text-accent">innovative</span> tech <span className="text-accent">solutions</span>,<br/> <span className="text-accent">one line</span> of code at a time.</h3>
           <button 
             className="px-5 py-2 bg-accent text-background rounded-lg text-2xl w-40 mt-3"
             onClick={() => {
@@ -117,13 +105,13 @@ export default function Home() {
 
       <section id="aboutMe" className="flex flex-col min-h-screen relative snap-start snap-always">
         <div className="w-full h-full flex flex-col">
-          <h1 className="text-text text-7xl mb-12 pl-48 pt-24"><span className="text-accent">About</span> Me!</h1>
-          <div className="flex w-full h-full">
-            <div className="w-1/2 flex items-center justify-center">
+          <h1 className="text-text text-4xl md:text-7xl mb-12 pl-4 md:pl-48 pt-12 md:pt-24"><span className="text-accent">About</span> Me!</h1>
+          <div className="flex flex-col md:flex-row w-full h-full">
+            <div className="w-full md:w-1/2 flex items-center justify-center py-8 md:py-0">
               <StackedImageCard images={displayImages}/>
             </div>
-            <div className="w-1/2 flex items-center pr-36">
-            <p className="text-text text-2xl text-left tracking-wide leading-tight z-10">
+            <div className="w-full md:w-1/2 flex items-center px-4 md:pr-36">
+            <p className="text-text text-lg md:text-2xl text-left tracking-wide leading-tight z-10">
               Hey! I&apos;m Ali, a freshman at <span className="text-accent">UT Austin</span> where I&apos;m studying <span className="text-accent">Computer Science</span>. My journey has taken me from binge-learning cutting-edge technologies to developing websites that make people&apos;s lives easier.
               <br/><br/>
               Outside of coding, you&apos;ll find me enjoying the <span className="text-accent">simple</span> pleasures of life, whether that&apos;s indulging my massive sweet tooth or making memories with friends and family. I <span className="text-accent">thrive</span> on humor and good vibes, always trying to make the mood <span className="text-accent">light</span>. Despite my lighthearted approach, I value the lessons learned from life&apos;s <span className="text-accent">heavier moments</span>.
@@ -139,7 +127,7 @@ export default function Home() {
         <div className="w-full h-full flex flex-col justify-start pl-48 mt-48">
           <h1 className="text-text text-7xl mb-24">Check Out My <span className="text-accent">Projects</span>!</h1>
           <div className="w-full flex justify-center items-center">
-            <div className='grid grid-cols-3 gap-4 w-2/3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-2/3 px-4 md:px-0'>
               <ProjectCard
                 imagePath={"/myMosque.jpg"} 
                 title={"MyMosque"} 
