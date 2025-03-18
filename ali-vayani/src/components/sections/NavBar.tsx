@@ -11,24 +11,19 @@ export default function NavBar() {
     const [currSection, setCurrSection] = useState(pathname);
     const navItems = [
         {path: "/", label:"home"},
-        {path: "/about", label:"about"},
-        {path: "/work", label:"work"},
+        {path: "/tech", label:"tech"},
     ]
-
-    const handleNavigate = (section: string) => {
-        console.log(section)
-    }
 
     return (
         <header className="flex items-center justify-between mx-15 mt-5">
-            <h1 className="text-5xl w-1/3">vayani</h1>
+            <h1 className="text-4xl w-1/3">vayani</h1>
             <div className="flex w-1/3 justify-center">
             {navItems.map((item) => {
                     return (
                         <Link
                             href={item.path}
                             key={item.path}
-                            className={`text-xl hover:cursor-pointer relative z-0 px-4 py-1
+                            className={`text-xl hover:cursor-pointer relative z-0 px-4 py-
                                 ${currSection == item.path ? 'text-white' : 'text-white/70 hover:text-white'}`}
                         > 
                         {item.label}
