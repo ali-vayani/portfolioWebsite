@@ -23,6 +23,7 @@ export default function NavBar() {
                         <Link
                             href={item.path}
                             key={item.path}
+                            onClick={() => setCurrSection(item.path)}
                             className={`text-xl hover:cursor-pointer relative z-0 px-4 py-
                                 ${currSection == item.path ? 'text-white' : 'text-white/70 hover:text-white'}`}
                         > 

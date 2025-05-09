@@ -32,7 +32,7 @@ export default function About() {
     ];
     
     return (
-        <div className='flex flex-col px-60 mt-20 gap-6'>
+        <div className='flex flex-col gap-6'>
             <div className='flex flex-col'>
                 <TypeAnimation
                     sequence={[
@@ -61,24 +61,37 @@ export default function About() {
                     
                 />
             </div>
-            {<p className="w-1/2 text-white/70 text-lg">
+            {<p className="max-w-2/3 text-white/70 text-lg">
                 i'm currently studying{' '}
-                {experiences.map((exp, index) => (
-                    <React.Fragment key={index}>
-                        <span className="text-white">{exp.role}</span> @{' '}
-                        <a
-                            className={`hover:text-[${exp.hoverColor}] ${exp.hoverBg ? `hover:bg-${exp.hoverBg}` : ''}`}
-                            href={exp.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {exp.org}
-                        </a>
-                        {index < experiences.length - 1 && (
-                            index === experiences.length - 2 ? ', and ' : ', '
-                        )}
-                    </React.Fragment>
-                ))}
+                {experiences.map((exp, index) => {
+                    return (
+                        <React.Fragment key={index}>
+                            <span className="text-white">{exp.role}</span> @{' '}
+                            <a
+                                style={{
+                                    transition: 'all 0.2s ease-in-out'
+                                }}
+                                onMouseOver={(e) => {
+                                    e.currentTarget.style.color = exp.hoverColor;
+                                    if (exp.hoverBg) e.currentTarget.style.backgroundColor = exp.hoverBg;
+                                }}
+                                onMouseOut={(e) => {
+                                    e.currentTarget.style.color = '';
+                                    if (exp.hoverBg) e.currentTarget.style.backgroundColor = '';
+                                }}
+                                href={exp.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {exp.org}
+                            </a>
+                            {index < experiences.length - 1 && (
+                                index === experiences.length - 2 ? ', and ' : ', '
+                            )}
+                        </React.Fragment>
+                    )
+                    
+            })}
             </p>}
         </div>
     )

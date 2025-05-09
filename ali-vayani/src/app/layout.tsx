@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Lexend } from "next/font/google";
 import "./globals.css";
-
+import NavBar from "@/components/sections/NavBar";
+import { motion } from "framer-motion";
 const lexend = Lexend({ 
   subsets: ["latin"] 
 });
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body
         className={lexend.className}
       >
+        <NavBar/>
         {children}
       </body>
     </html>
