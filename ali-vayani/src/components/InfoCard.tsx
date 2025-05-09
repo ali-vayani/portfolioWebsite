@@ -1,14 +1,25 @@
 "use client"
 import Image from "next/image";
 import { CardInfo } from "@/data/data";
+import { motion } from "framer-motion";
 
-export default function ProjectCard({ card }: { card: CardInfo }) {
+export default function ProjectCard({ card, isHovered }: { card: CardInfo; isHovered: boolean }) {
     return (
-        <div className="flex flex-col rounded-lg overflow-hidden">
+        <motion.div 
+            className="flex flex-col rounded-lg overflow-hidden"
+            animate={{
+                scale: isHovered ? 1.1 : 1,
+                transition: { duration: 0.2 }
+            }}
+        >
             <div className="relative w-full aspect-video">
+                <motion.div
+                    className="absolute inset-0 rounded-t-lg"
+                    transition={{ duration: 0.3 }}
+                />
                 {card.svg ? (
                     <div 
-                        className="w-full h-full flex items-center justify-cente rounded-t-lg cursor-pointer"
+                        className="w-full h-full flex items-center justify-center rounded-t-lg cursor-pointer relative z-10"
                         onClick={() => window.open(card.link, "_blank")}
                     >
                         {card.svg}
@@ -18,7 +29,7 @@ export default function ProjectCard({ card }: { card: CardInfo }) {
                         src={card.image}
                         alt={card.title}
                         fill
-                        className="object-cover rounded-t-lg"
+                        className="object-cover rounded-t-lg relative z-10"
                         onClick={() => window.open(card.link, "_blank")}
                         style={{ cursor: 'pointer' }}
                     />
@@ -35,6 +46,6 @@ export default function ProjectCard({ card }: { card: CardInfo }) {
                     {card.link.substring(8)}
                 </a>
             </div>
-        </div>
+        </motion.div>
     )
 }

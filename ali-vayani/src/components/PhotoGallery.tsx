@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export default function PhotoGallery() {
     return (
         <div>
-            <div>
+            <div className="flex flex-col gap-2">
                 {photos.map((image, index) => {
                     return (
                         <motion.div
@@ -16,18 +16,17 @@ export default function PhotoGallery() {
                             }}
                             whileHover={{
                                 rotate: 0,
-                                scale: 1.1,
+                                scale: 1.20,
                                 zIndex: 100,
                                 transition: { duration: 0.3 }
                             }}
                             className="rounded-lg"
                             style={{
-                                marginLeft: `${index * 5}px`,
-                                marginTop: `${index * 5}px`
+                                marginLeft: `${index }px`,
+                                marginTop: `${index * -15}px`
                             }}
                             onMouseOver={(e) => {
                                 e.currentTarget.style.zIndex = "100";
-                                console.log("test")
                             }}
                         >
                         <Image

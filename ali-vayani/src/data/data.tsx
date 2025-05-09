@@ -16,6 +16,62 @@ export interface CardInfo {
     link: string;
 }
 
+export interface TimelineEvent {
+    name: string;
+    date: string;
+    title: string;
+    description: string;
+    role?: string;
+    org?: string;
+    url?: string;
+    hoverColor?: string;
+    hoverBg?: string;
+}
+
+export const timeline: TimelineEvent[] = [
+    {
+        name: "aramco",
+        date: "may 2025 - aug. 2025",
+        title: "2025 software intern",
+        description: "• starting soon...",
+        role: "incoming intern",
+        org: "aramco",
+        url: "https://www.aramco.com/en",
+        hoverColor: "#3eb458"
+    },
+    {
+        name: "freetail hackers",
+        date: "feb. 2025 - present",
+        title: "software engineer",
+        description: "• pushing code to rodeo, our hackathon platform",
+        role: "software engineer",
+        org: "freetail hackers",
+        url: "https://freetailhackers.com/",
+        hoverColor: "#000000",
+        hoverBg: "white"
+    },
+    {
+        name: "MyMosque",
+        date: "jan. 2025 - present",
+        title: "founder & developer",
+        description: "• released 1.0 of MyMosque",
+        role: "solo developing",
+        org: "mymosque",
+        url: "https://github.com/ali-vayani/MyMosque",
+        hoverColor: "#C8C079"
+    },
+    {
+        name: "UT Austin 🤘🏽",
+        date: "aug. 2024 - dec. 2027",
+        title: "b.s. computer science",
+        description: "• pursuing knowledge",
+        role: "computer science",
+        org: "UT Austin",
+        url: "https://www.cs.utexas.edu/",
+        hoverColor: "#cd6a00"
+    }
+];
+
 export const photos = [
     {
         image: "/tower.jpg",

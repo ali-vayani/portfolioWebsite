@@ -1,35 +1,8 @@
 'use client'
 import { TypeAnimation } from 'react-type-animation';
 import React from 'react'
-
+import { timeline } from '@/data/data';
 export default function About() {
-    const experiences = [
-        {
-            role: "computer science",
-            org: "UT Austin",
-            url: "https://www.cs.utexas.edu/",
-            hoverColor: "#cd6a00"
-        },
-        {
-            role: "software engineer",
-            org: "freetail hackers",
-            url: "https://freetailhackers.com/",
-            hoverColor: "#000000",
-            hoverBg: "white"
-        },
-        {
-            role: "incoming intern",
-            org: "aramco",
-            url: "https://www.aramco.com/en",
-            hoverColor: "#3eb458"
-        },
-        {
-            role: "solo developing",
-            org: "mymosque",
-            url: "https://github.com/ali-vayani/MyMosque",
-            hoverColor: "#C8C079"
-        }
-    ];
     
     return (
         <div className='flex flex-col gap-6'>
@@ -63,7 +36,7 @@ export default function About() {
             </div>
             {<p className="max-w-2/3 text-white/70 text-lg">
                 i'm currently studying{' '}
-                {experiences.map((exp, index) => {
+                {[...timeline].reverse().map((exp, index) => {
                     return (
                         <React.Fragment key={index}>
                             <span className="text-white">{exp.role}</span> @{' '}
@@ -72,7 +45,7 @@ export default function About() {
                                     transition: 'all 0.2s ease-in-out'
                                 }}
                                 onMouseOver={(e) => {
-                                    e.currentTarget.style.color = exp.hoverColor;
+                                    if (exp.hoverColor) e.currentTarget.style.color = exp.hoverColor;
                                     if (exp.hoverBg) e.currentTarget.style.backgroundColor = exp.hoverBg;
                                 }}
                                 onMouseOut={(e) => {
@@ -85,13 +58,12 @@ export default function About() {
                             >
                                 {exp.org}
                             </a>
-                            {index < experiences.length - 1 && (
-                                index === experiences.length - 2 ? ', and ' : ', '
+                            {index < timeline.length - 1 && (
+                                index === timeline.length - 2 ? ', and ' : ', '
                             )}
                         </React.Fragment>
                     )
-                    
-            })}
+                })}
             </p>}
         </div>
     )
