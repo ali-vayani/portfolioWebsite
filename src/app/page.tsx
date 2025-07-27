@@ -23,7 +23,7 @@ export default function Home() {
           <PhotoGallery />
         </div>
         
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+        <div className="flex flex-col justify-center items-center lg:flex-row gap-8 lg:gap-16">
           <div className="flex flex-col gap-8 lg:gap-12 order-2 lg:order-1">
             <About/>
             <MyStats/>

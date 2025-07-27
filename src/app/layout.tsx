@@ -3,7 +3,7 @@ import { Lexend } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/sections/NavBar";
 import Starfield from "@/components/Starfield";
-
+import Footer from "@/components/sections/Footer";
 const lexend = Lexend({ 
   subsets: ["latin"] 
 });
@@ -26,6 +26,7 @@ export default function RootLayout({
         <Starfield />
         <NavBar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

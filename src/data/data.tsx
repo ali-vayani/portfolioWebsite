@@ -86,6 +86,12 @@ export const photos = [
         rotation: -4
     },
     {
+        image: "/about/rooftop.jpg",
+        alt: "rooftop",
+        style: "rotate-[2deg]",
+        rotation: -2
+    },
+    {
         image: "/about/cravings.jpg",
         alt: "cravings",
         style: "rotate-[-3deg]",
@@ -96,7 +102,7 @@ export const photos = [
         alt: "og",
         style: "rotate-[5deg]",
         rotation: -5
-    },
+    }
 ]
 
 export const projects: CardInfo[] = [

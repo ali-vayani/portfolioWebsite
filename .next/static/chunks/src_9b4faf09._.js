@@ -74,6 +74,12 @@ const photos = [
         rotation: -4
     },
     {
+        image: "/about/rooftop.jpg",
+        alt: "rooftop",
+        style: "rotate-[2deg]",
+        rotation: -2
+    },
+    {
         image: "/about/cravings.jpg",
         alt: "cravings",
         style: "rotate-[-3deg]",
@@ -121,7 +127,7 @@ const tech = [
             color: "#007396"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 133,
+            lineNumber: 139,
             columnNumber: 14
         }, this),
         link: "https://www.java.com/",
@@ -135,7 +141,7 @@ const tech = [
             color: "#3776AB"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 140,
+            lineNumber: 146,
             columnNumber: 14
         }, this),
         link: "https://www.python.org/",
@@ -149,7 +155,7 @@ const tech = [
             color: "#3178C6"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 147,
+            lineNumber: 153,
             columnNumber: 14
         }, this),
         link: "https://www.typescriptlang.org/",
@@ -164,7 +170,7 @@ const tech = [
             color: "#087EA4"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 155,
+            lineNumber: 161,
             columnNumber: 14
         }, this),
         link: "https://react.dev/",
@@ -178,7 +184,7 @@ const tech = [
             color: "white"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 162,
+            lineNumber: 168,
             columnNumber: 14
         }, this),
         link: "https://nextjs.org/",
@@ -192,7 +198,7 @@ const tech = [
             color: "#FF3E00"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 169,
+            lineNumber: 175,
             columnNumber: 14
         }, this),
         link: "https://svelte.dev/",
@@ -206,7 +212,7 @@ const tech = [
             color: "#06B6D4"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 176,
+            lineNumber: 182,
             columnNumber: 14
         }, this),
         link: "https://tailwindcss.com/",
@@ -220,7 +226,7 @@ const tech = [
             color: "white"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 183,
+            lineNumber: 189,
             columnNumber: 14
         }, this),
         link: "https://expo.dev/",
@@ -235,7 +241,7 @@ const tech = [
             color: "#6DB33F"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 191,
+            lineNumber: 197,
             columnNumber: 14
         }, this),
         link: "https://spring.io/projects/spring-boot",
@@ -249,7 +255,7 @@ const tech = [
             color: "#339933"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 198,
+            lineNumber: 204,
             columnNumber: 14
         }, this),
         link: "https://nodejs.org/",
@@ -264,7 +270,7 @@ const tech = [
             color: "#47A248"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 206,
+            lineNumber: 212,
             columnNumber: 14
         }, this),
         link: "https://www.mongodb.com/",
@@ -278,7 +284,7 @@ const tech = [
             color: "#FFCA28"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 213,
+            lineNumber: 219,
             columnNumber: 14
         }, this),
         link: "https://firebase.google.com/",
@@ -292,7 +298,7 @@ const tech = [
             color: "#2D3748"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 220,
+            lineNumber: 226,
             columnNumber: 14
         }, this),
         link: "https://www.prisma.io/",
@@ -307,7 +313,7 @@ const tech = [
             color: "#EE4C2C"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 228,
+            lineNumber: 234,
             columnNumber: 14
         }, this),
         link: "https://pytorch.org/",
@@ -322,7 +328,7 @@ const tech = [
             color: "white"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 236,
+            lineNumber: 242,
             columnNumber: 14
         }, this),
         link: "https://www.unrealengine.com/",
@@ -805,7 +811,7 @@ function Home() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-col lg:flex-row gap-8 lg:gap-16",
+                    className: "flex flex-col justify-center items-center lg:flex-row gap-8 lg:gap-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-col gap-8 lg:gap-12 order-2 lg:order-1",
