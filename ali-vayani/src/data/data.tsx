@@ -32,9 +32,9 @@ export const timeline: TimelineEvent[] = [
     {
         name: "aramco",
         date: "may 2025 - aug. 2025",
-        title: "2025 software intern",
-        description: "• starting soon...",
-        role: "incoming intern",
+        title: "2025 software engineering intern",
+        description: "• built a RAG pipeline for hundreds of documents",
+        role: "software engineering intern",
         org: "aramco",
         url: "https://www.aramco.com/en",
         hoverColor: "#3eb458"
@@ -52,17 +52,17 @@ export const timeline: TimelineEvent[] = [
     },
     {
         name: "MyMosque",
-        date: "jan. 2025 - present",
+        date: "may. 2025 - present",
         title: "founder & developer",
-        description: "• released 1.0 of MyMosque",
-        role: "solo developing",
+        description: "• bringing communities together",
+        role: "tech lead",
         org: "mymosque",
         url: "https://github.com/ali-vayani/MyMosque",
         hoverColor: "#C8C079"
     },
     {
         name: "UT Austin 🤘🏽",
-        date: "aug. 2024 - dec. 2027",
+        date: "aug. 2024 - present",
         title: "b.s. computer science",
         description: "• pursuing knowledge",
         role: "computer science",
@@ -74,25 +74,25 @@ export const timeline: TimelineEvent[] = [
 
 export const photos = [
     {
-        image: "/tower.jpg",
+        image: "/about/tower.jpg",
         alt: "tower",
         style: "rotate-[-6deg]",
         rotation: 6
     },
     {
-        image: "/formal.jpg",
+        image: "/about/formal.jpg",
         alt: "formal",
         style: "rotate-[4deg]",
         rotation: -4
     },
     {
-        image: "/cravings.jpg",
+        image: "/about/cravings.jpg",
         alt: "cravings",
         style: "rotate-[-3deg]",
         rotation: 3
     },
     {
-        image: "/og.jpg",
+        image: "/about/og.jpg",
         alt: "og",
         style: "rotate-[5deg]",
         rotation: -5
@@ -103,25 +103,25 @@ export const projects: CardInfo[] = [
     {
         title: "MyMosque",
         description: "Built MyMosque, a community-focused mobile app with mosque locator, prayer times, and event update",
-        image: "/mymosque.jpg",
+        image: "/projects/mymosque.jpg",
         link: "https://github.com/ali-vayani/MyMosque"
     },
     {
         title: "The Heat Ordering Platform",
         description: "Developed ordering platform for school cafeteria & admin panel to edit menu items",
-        image: "/TheHeatLogo.png",
+        image: "/projects/TheHeatLogo.png",
         link: "https://the-heat.vercel.app/"
     },
     {
         title: "Digit Classifier",
         description: "Built a deep neural network for MNIST digit classification and a Tkinter app for real-time user-drawn predictions",
-        image: "/mnist.png",
+        image: "/projects/mnist.png",
         link: "https://github.com/ali-vayani/pytorch/tree/main/MNIST%20Project"
     },
     {
         title: "Snake RL Agent",
         description: "Developed Snake game agent using Q-learning and a neural network, with training scripts and visualizations",
-        image: "/snake.jpg",
+        image: "/projects/snake.jpg",
         link: "https://github.com/ali-vayani/snake-game-rl"
     }
 ]
@@ -198,13 +198,6 @@ export const tech: CardInfo[] = [
         svg: <SiNodedotjs size={150} color="#339933" />,
         link: "https://nodejs.org/",
         description: "JavaScript runtime for server-side applications.",
-        image: "none"
-    },
-    {
-        title: "Flask",
-        svg: <SiFlask size={150} color="white" />,
-        link: "https://flask.palletsprojects.com/",
-        description: "Lightweight Python web framework.",
         image: "none"
     },
     // Databases & ORMs

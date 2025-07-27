@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import React from 'react'
 import { timeline } from '@/data/data';
 export default function About() {
-    
+
     return (
         <div className='flex flex-col gap-6'>
             <div className='flex flex-col'>

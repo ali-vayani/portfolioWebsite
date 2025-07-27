@@ -40,10 +40,10 @@ export default function NavBar() {
                 })}
             </div>
             <div className="flex gap-2 w-1/3 justify-end">
-                <a href="https://github.com/ali-vayani" target="_blank" rel="noopener noreferrer" className="z-50">
+                <a href="https://github.com/ali-vayani" target="_blank" rel="noopener noreferrer" className="z-50 transition-transform duration-200 hover:scale-110 hover:text-gray-300">
                     <Github size={32} />
                 </a>
-                <a href="https://www.linkedin.com/in/ali-vayani-76a566301/" target="_blank" rel="noopener noreferrer" className="z-50">
+                <a href="https://www.linkedin.com/in/ali-vayani-76a566301/" target="_blank" rel="noopener noreferrer" className="z-50 transition-transform duration-200 hover:scale-110 hover:text-blue-400">
                     <Linkedin size={32} />
                 </a>
             </div>

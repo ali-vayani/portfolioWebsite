@@ -32,8 +32,8 @@ export default function PhotoGallery() {
                         <Image
                             src={image.image}
                             alt={image.alt}
-                            width={350}
-                            height={350}
+                            width={425}
+                            height={425}
                             className="rounded-lg shadow-lg"
                         />
                         </motion.div>

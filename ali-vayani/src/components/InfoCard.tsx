@@ -4,6 +4,7 @@ import { CardInfo } from "@/data/data";
 import { motion } from "framer-motion";
 
 export default function ProjectCard({ card, isHovered }: { card: CardInfo; isHovered: boolean }) {
+    console.log(card);
     return (
         <motion.div 
             className="flex flex-col rounded-lg overflow-hidden"

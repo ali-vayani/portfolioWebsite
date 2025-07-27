@@ -17,14 +17,14 @@ export default function Tech() {
             <h2 
               onClick={() => setCurrSection("projects")}
               style={{ cursor: 'pointer' }}
-              className={`${currSection === "projects" ? "text-white" : "text-white/50 hover:text-white transition-colors duration-200"}`}
+              className={`${currSection === "projects" ? "text-white" : "text-white/50 hover:text-white transition-colors duration-200 z-10"}`}
             >
               projects
             </h2>
             <h2 
               onClick={() => setCurrSection("technologies")}
               style={{ cursor: 'pointer' }}
-              className={`${currSection === "technologies" ? "text-white" : "text-white/50 hover:text-white transition-colors duration-200"}`}
+              className={`${currSection === "technologies" ? "text-white" : "text-white/50 hover:text-white transition-colors duration-200 z-10"}`}
             >
               technologies
             </h2>
