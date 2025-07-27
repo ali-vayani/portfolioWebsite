@@ -36,13 +36,11 @@ export default function Footer() {
         <footer className="w-full border-t border-white/10 bg-black/20 backdrop-blur-sm mt-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                    {/* Left side - Name and tagline */}
                     <div className="flex flex-col items-center md:items-start">
                         <h3 className="text-white text-lg font-semibold">ali vayani</h3>
                         <p className="text-white/60 text-sm mt-1">building the future, one line at a time</p>
                     </div>
 
-                    {/* Center - Social links */}
                     <div className="flex items-center space-x-6">
                         {socialLinks.map((link) => (
                             <a
@@ -57,8 +55,6 @@ export default function Footer() {
                             </a>
                         ))}
                     </div>
-
-                    {/* Right side - Copyright */}
                     <div className="flex flex-col items-center md:items-end">
                         <p className="text-white/60 text-sm">
                             © {currentYear} ali vayani. all rights reserved.

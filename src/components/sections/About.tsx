@@ -34,7 +34,7 @@ export default function About() {
                     
                 />
             </div>
-            {<p className="max-w-full lg:max-w-2/3 text-white/70 text-base sm:text-lg">
+            {<p className="max-w-full z-10 lg:max-w-2/3 text-white/70 text-base sm:text-lg">
                 i'm currently studying{' '}
                 {[...timeline].reverse().map((exp, index) => {
                     return (

@@ -16,7 +16,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 ;
 function ProjectCard({ card, isHovered }) {
-    console.log(card);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
         className: "flex flex-col rounded-lg overflow-hidden",
         animate: {
@@ -36,7 +35,7 @@ function ProjectCard({ card, isHovered }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.tsx",
-                        lineNumber: 17,
+                        lineNumber: 16,
                         columnNumber: 17
                     }, this),
                     card.svg ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -45,7 +44,7 @@ function ProjectCard({ card, isHovered }) {
                         children: card.svg
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.tsx",
-                        lineNumber: 22,
+                        lineNumber: 21,
                         columnNumber: 21
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         src: card.image,
@@ -58,13 +57,13 @@ function ProjectCard({ card, isHovered }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.tsx",
-                        lineNumber: 29,
+                        lineNumber: 28,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/InfoCard.tsx",
-                lineNumber: 16,
+                lineNumber: 15,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -75,7 +74,7 @@ function ProjectCard({ card, isHovered }) {
                         children: card.title
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.tsx",
-                        lineNumber: 40,
+                        lineNumber: 39,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -83,7 +82,7 @@ function ProjectCard({ card, isHovered }) {
                         children: card.description
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.tsx",
-                        lineNumber: 41,
+                        lineNumber: 40,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -93,19 +92,19 @@ function ProjectCard({ card, isHovered }) {
                         children: card.link.substring(8)
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.tsx",
-                        lineNumber: 42,
+                        lineNumber: 41,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/InfoCard.tsx",
-                lineNumber: 39,
+                lineNumber: 38,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/InfoCard.tsx",
-        lineNumber: 9,
+        lineNumber: 8,
         columnNumber: 9
     }, this);
 }
@@ -627,7 +626,7 @@ const Timeline = ({ events })=>{
                     className: "absolute left-4 top-0 h-full w-0.25 bg-white"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Timeline.tsx",
-                    lineNumber: 13,
+                    lineNumber: 12,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -672,7 +671,7 @@ const Timeline = ({ events })=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Timeline.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 47,
                                     columnNumber: 21
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -691,7 +690,7 @@ const Timeline = ({ events })=>{
                                                     children: event.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 59,
+                                                    lineNumber: 58,
                                                     columnNumber: 29
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -699,13 +698,13 @@ const Timeline = ({ events })=>{
                                                     children: event.date
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 68,
                                                     columnNumber: 29
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 57,
                                             columnNumber: 25
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -713,7 +712,7 @@ const Timeline = ({ events })=>{
                                             children: event.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 70,
                                             columnNumber: 25
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -721,30 +720,30 @@ const Timeline = ({ events })=>{
                                             children: event.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 71,
                                             columnNumber: 25
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Timeline.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 56,
                                     columnNumber: 21
                                 }, this)
                             ]
                         }, index, true, {
                             fileName: "[project]/src/components/Timeline.tsx",
-                            lineNumber: 16,
+                            lineNumber: 15,
                             columnNumber: 25
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/Timeline.tsx",
-                    lineNumber: 14,
+                    lineNumber: 13,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Timeline.tsx",
-            lineNumber: 12,
+            lineNumber: 11,
             columnNumber: 13
         }, this)
     }, void 0, false, {

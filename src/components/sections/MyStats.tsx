@@ -88,10 +88,7 @@ export default function MyStats() {
                         }}
                         className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:border-white/30 transition-all duration-300 cursor-pointer group relative overflow-hidden"
                     >
-                        {/* Gradient overlay on hover */}
                         <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        
-                        {/* Animated border glow with unique colors */}
                         <div className={`absolute inset-0 rounded-lg bg-gradient-to-r ${stat.colorScheme.primary}/20 ${stat.colorScheme.accent}/20 ${stat.colorScheme.secondary}/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
                         
                         <div className="relative z-10">
@@ -117,8 +114,6 @@ export default function MyStats() {
                                 </motion.div>
                             )}
                         </div>
-                        
-                        {/* Subtle shine effect with unique colors */}
                         <div className={`absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent ${stat.colorScheme.primary}/20 to-transparent`} />
                     </motion.div>
                 ))}

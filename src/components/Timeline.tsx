@@ -8,7 +8,6 @@ interface TimelineProps {
 const Timeline: React.FC<TimelineProps> = ({ events }) => {
     return (
         <div className="flex flex-row gap-8">
-            {/* <h2 className="text-2xl font-light text-white">Timeline</h2> */}
             <div className="relative">
                 <div className="absolute left-4 top-0 h-full w-0.25 bg-white" />
                 <div className="space-y-8">
