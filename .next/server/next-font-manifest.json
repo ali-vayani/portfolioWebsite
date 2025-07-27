@@ -1,0 +1,15 @@
+{
+  "app": {
+    "[project]/src/app/page": [
+      "static/media/wlpwgwvFAVdoq2_v_6QU82RHaA-s.p.296fbbb2.woff2",
+      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
+    ],
+    "[project]/src/app/tech/page": [
+      "static/media/wlpwgwvFAVdoq2_v_6QU82RHaA-s.p.296fbbb2.woff2",
+      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
