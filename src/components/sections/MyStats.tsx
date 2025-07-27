@@ -25,9 +25,9 @@ const stats: StatItem[] = [
         }
     },
     { 
-        label: "red bulls & monsters", 
-        value: "too many", 
-        description: "lowkey just drink them for the flavor",
+        label: "roof tops visited", 
+        value: "~7", 
+        description: "30.286400, -97.751892",
         colorScheme: {
             primary: "from-red-400",
             secondary: "to-orange-400",
@@ -46,7 +46,7 @@ const stats: StatItem[] = [
     },
     { 
         label: "cookies burned", 
-        value: "~7", 
+        value: "too many", 
         description: "i still like to call myself a cookie connoisseur",
         colorScheme: {
             primary: "from-amber-400",
