@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { 
     SiReact, SiNextdotjs, SiExpo, 
-    SiPython, SiTypescript, SiFlask,
+    SiPython, SiTypescript,
     SiNodedotjs, SiSvelte, SiTailwindcss,
     SiPrisma, SiFirebase, SiMongodb,
     SiPytorch, SiUnrealengine, SiSpringboot
