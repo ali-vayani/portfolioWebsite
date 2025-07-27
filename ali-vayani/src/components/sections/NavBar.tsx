@@ -15,8 +15,8 @@ export default function NavBar() {
     ]
 
     return (
-        <header className="flex items-center justify-between mx-15 mt-5">
-            <h1 className="text-4xl w-1/3">vayani</h1>
+        <header className="flex items-center justify-between px-4 sm:px-8 md:px-15 mt-5">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl w-1/3">vayani</h1>
             <div className="flex w-1/3 justify-center">
             {navItems.map((item) => {
                     return (
@@ -24,7 +24,7 @@ export default function NavBar() {
                             href={item.path}
                             key={item.path}
                             onClick={() => setCurrSection(item.path)}
-                            className={`text-xl hover:cursor-pointer relative z-0 px-4 py-
+                            className={`text-lg sm:text-xl hover:cursor-pointer relative z-0 px-2 sm:px-4 py-1
                                 ${currSection == item.path ? 'text-white' : 'text-white/70 hover:text-white'}`}
                         > 
                         {item.label}
@@ -41,10 +41,10 @@ export default function NavBar() {
             </div>
             <div className="flex gap-2 w-1/3 justify-end">
                 <a href="https://github.com/ali-vayani" target="_blank" rel="noopener noreferrer" className="z-50 transition-transform duration-200 hover:scale-110 hover:text-gray-300">
-                    <Github size={32} />
+                    <Github size={24} className="sm:w-8 sm:h-8 md:w-8 md:h-8" />
                 </a>
                 <a href="https://www.linkedin.com/in/ali-vayani-76a566301/" target="_blank" rel="noopener noreferrer" className="z-50 transition-transform duration-200 hover:scale-110 hover:text-blue-400">
-                    <Linkedin size={32} />
+                    <Linkedin size={24} className="sm:w-8 sm:h-8 md:w-8 md:h-8" />
                 </a>
             </div>
         </header>

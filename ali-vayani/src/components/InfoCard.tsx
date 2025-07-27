@@ -9,7 +9,7 @@ export default function ProjectCard({ card, isHovered }: { card: CardInfo; isHov
         <motion.div 
             className="flex flex-col rounded-lg overflow-hidden"
             animate={{
-                scale: isHovered ? 1.1 : 1,
+                scale: isHovered ? 1.05 : 1,
                 transition: { duration: 0.2 }
             }}
         >
@@ -36,12 +36,12 @@ export default function ProjectCard({ card, isHovered }: { card: CardInfo; isHov
                     />
                 )}
             </div>
-            <div className="pt-2 space-y-2">
-                <h4 className="text-xl">{card.title}</h4>
-                <p className="text-sm font-light opacity-60">{card.description}</p>
+            <div className="pt-2 space-y-1 sm:space-y-2 p-2 sm:p-0">
+                <h4 className="text-lg sm:text-xl">{card.title}</h4>
+                <p className="text-xs sm:text-sm font-light opacity-60">{card.description}</p>
                 <a 
                     href={card.link} 
-                    className="text-blue-300 text-sm hover:text-blue-400 truncate block max-w-full font-light"
+                    className="text-blue-300 text-xs sm:text-sm hover:text-blue-400 truncate block max-w-full font-light"
                     title={card.link}
                 >
                     {card.link.substring(8)}

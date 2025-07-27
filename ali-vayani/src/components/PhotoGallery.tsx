@@ -5,7 +5,8 @@ import { motion } from "framer-motion"
 export default function PhotoGallery() {
     return (
         <div>
-            <div className="flex flex-col gap-2">
+            {/* Desktop: Vertical layout */}
+            <div className="hidden lg:flex flex-col gap-2">
                 {photos.map((image, index) => {
                     return (
                         <motion.div

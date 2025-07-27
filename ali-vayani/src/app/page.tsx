@@ -16,13 +16,23 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex flex-row px-60 mt-20 justify-center gap-16"
+        className="flex flex-col px-4 sm:px-8 md:px-16 lg:px-60 mt-5 gap-8"
       >
-        <div className="flex flex-col gap-12">
-          <About/>
-          <MyStats/>
+        {/* Photo Gallery - Horizontal on mobile, vertical on desktop */}
+        <div className="lg:hidden">
+          <PhotoGallery />
         </div>
-        <PhotoGallery/>
+        
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+          <div className="flex flex-col gap-8 lg:gap-12 order-2 lg:order-1">
+            <About/>
+            <MyStats/>
+          </div>
+          {/* Photo Gallery - Vertical on desktop only */}
+          <div className="hidden lg:block order-1 lg:order-2">
+            <PhotoGallery/>
+          </div>
+        </div>
       </motion.div>
     </motion.div>
   );

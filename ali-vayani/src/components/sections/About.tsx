@@ -5,7 +5,7 @@ import { timeline } from '@/data/data';
 export default function About() {
 
     return (
-        <div className='flex flex-col gap-6'>
+        <div className='flex flex-col gap-4 sm:gap-6'>
             <div className='flex flex-col'>
                 <TypeAnimation
                     sequence={[
@@ -15,7 +15,7 @@ export default function About() {
                     cursor={true}
                     repeat={0}
                     speed={50}
-                    style={{ display: 'inline-block', fontSize: '2rem' }}
+                    style={{ display: 'inline-block', fontSize: 'clamp(1.5rem, 4vw, 2rem)' }}
                 />
                 <TypeAnimation
                     sequence={[
@@ -30,11 +30,11 @@ export default function About() {
                     cursor={true}
                     repeat={Infinity}
                     speed={50}
-                    style={{ display: 'inline-block', fontSize: '1.125rem', color: 'rgba(255, 255, 255, .70)' }}
+                    style={{ display: 'inline-block', fontSize: 'clamp(0.875rem, 3vw, 1.125rem)', color: 'rgba(255, 255, 255, .70)' }}
                     
                 />
             </div>
-            {<p className="max-w-2/3 text-white/70 text-lg">
+            {<p className="max-w-full lg:max-w-2/3 text-white/70 text-base sm:text-lg">
                 i'm currently studying{' '}
                 {[...timeline].reverse().map((exp, index) => {
                     return (

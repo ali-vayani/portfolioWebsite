@@ -64,10 +64,10 @@ export default function MyStats() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col gap-4"
         >
-            <h2 className="text-xl font-semibold text-white">
+            <h2 className="text-lg sm:text-xl font-semibold text-white">
                 some of my 2025 stats
             </h2>
-            <div className="grid grid-cols-2 gap-4 max-w-md">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-full lg:max-w-md">
                 {stats.map((stat, index) => (
                     <motion.div
                         key={index}
@@ -86,7 +86,7 @@ export default function MyStats() {
                                 ease: "easeOut"
                             }
                         }}
-                        className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-white/30 transition-all duration-300 cursor-pointer group relative overflow-hidden"
+                        className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:border-white/30 transition-all duration-300 cursor-pointer group relative overflow-hidden"
                     >
                         {/* Gradient overlay on hover */}
                         <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -96,7 +96,7 @@ export default function MyStats() {
                         
                         <div className="relative z-10">
                             <motion.div 
-                                className={`text-2xl font-bold text-white mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r ${stat.colorScheme.primary} ${stat.colorScheme.secondary} transition-all duration-300`}
+                                className={`text-xl sm:text-2xl font-bold text-white mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r ${stat.colorScheme.primary} ${stat.colorScheme.secondary} transition-all duration-300`}
                                 whileHover={{ 
                                     scale: 1.1,
                                     transition: { duration: 0.2 }
@@ -104,7 +104,7 @@ export default function MyStats() {
                             >
                                 {stat.value}
                             </motion.div>
-                            <div className="text-sm text-white/70 font-medium group-hover:text-white/90 transition-colors duration-300">
+                            <div className="text-xs sm:text-sm text-white/70 font-medium group-hover:text-white/90 transition-colors duration-300">
                                 {stat.label}
                             </div>
                             {stat.description && (

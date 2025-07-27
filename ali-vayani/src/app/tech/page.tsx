@@ -10,10 +10,10 @@ export default function Tech() {
 
   return (
     <div className="bg-black -z-10">
-      <div className="flex flex-col px-60 mt-20 justify-center items-center">
+      <div className="flex flex-col px-4 sm:px-8 md:px-16 lg:px-60 mt-20 justify-center items-center">
       <Timeline events={timeline} />
-        <div className="flex flex-col text-lg gap-2 mb-6 w-full mt-10">
-          <span className="flex flex-row gap-4 text-lg">
+        <div className="flex flex-col text-base sm:text-lg gap-2 mb-6 w-full mt-10">
+          <span className="flex flex-row gap-4 text-base sm:text-lg">
             <h2 
               onClick={() => setCurrSection("projects")}
               style={{ cursor: 'pointer' }}
