@@ -53,7 +53,7 @@ export const timeline: TimelineEvent[] = [
     {
         name: "MyMosque",
         date: "may. 2025 - present",
-        title: "founder & developer",
+        title: "founder & tech lead",
         description: "• bringing communities together",
         role: "tech lead",
         org: "mymosque",
@@ -108,7 +108,7 @@ export const photos = [
 export const projects: CardInfo[] = [
     {
         title: "MyMosque",
-        description: "Built MyMosque, a community-focused mobile app with mosque locator, prayer times, and event update",
+        description: "Building a platform for Mosques to connect with their communities. Coming soon!",
         image: "/projects/mymosque.jpg",
         link: "https://github.com/ali-vayani/MyMosque"
     },

@@ -293,7 +293,7 @@ const timeline = [
     {
         name: "MyMosque",
         date: "may. 2025 - present",
-        title: "founder & developer",
+        title: "founder & tech lead",
         description: "• bringing communities together",
         role: "tech lead",
         org: "mymosque",
@@ -346,7 +346,7 @@ const photos = [
 const projects = [
     {
         title: "MyMosque",
-        description: "Built MyMosque, a community-focused mobile app with mosque locator, prayer times, and event update",
+        description: "Building a platform for Mosques to connect with their communities. Coming soon!",
         image: "/projects/mymosque.jpg",
         link: "https://github.com/ali-vayani/MyMosque"
     },
