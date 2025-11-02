@@ -30,11 +30,21 @@ export interface TimelineEvent {
 
 export const timeline: TimelineEvent[] = [
     {
+        name: "MyMosque",
+        date: "may. 2025 - present",
+        title: "founder & tech lead",
+        description: "• bringing communities together",
+        role: "tech lead",
+        org: "mymosque",
+        url: "https://mymosque.app",
+        hoverColor: "#C8C079"
+    },
+    {
         name: "aramco",
         date: "may 2025 - aug. 2025",
-        title: "2025 software engineering intern",
+        title: "software engineer intern",
         description: "• built a RAG pipeline for hundreds of documents",
-        role: "software engineering intern",
+        role: "prev. swe intern",
         org: "aramco",
         url: "https://www.aramco.com/en",
         hoverColor: "#3eb458"
@@ -49,16 +59,6 @@ export const timeline: TimelineEvent[] = [
         url: "https://freetailhackers.com/",
         hoverColor: "#000000",
         hoverBg: "white"
-    },
-    {
-        name: "MyMosque",
-        date: "may. 2025 - present",
-        title: "founder & tech lead",
-        description: "• bringing communities together",
-        role: "tech lead",
-        org: "mymosque",
-        url: "https://github.com/ali-vayani/MyMosque",
-        hoverColor: "#C8C079"
     },
     {
         name: "UT Austin 🤘🏽",
@@ -110,7 +110,7 @@ export const projects: CardInfo[] = [
         title: "MyMosque",
         description: "Building a platform for Mosques to connect with their communities. Coming soon!",
         image: "/projects/mymosque.jpg",
-        link: "https://github.com/ali-vayani/MyMosque"
+        link: "https://mymosque.app"
     },
     {
         title: "The Heat Ordering Platform",
