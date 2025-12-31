@@ -30,35 +30,45 @@ export interface TimelineEvent {
 
 export const timeline: TimelineEvent[] = [
     {
+        name: "Stripe",
+        date: "summer '26",
+        title: "software engineer intern",
+        description: "• incoming",
+        role: "incoming swe intern",
+        org: "stripe",
+        url: "https://stripe.com",
+        hoverColor: "#6772e5",
+    },
+    {
         name: "MyMosque",
         date: "may. 2025 - present",
-        title: "founder & tech lead",
+        title: "founder & engineer",
         description: "• bringing communities together",
-        role: "tech lead",
+        role: "swe",
         org: "mymosque",
         url: "https://mymosque.app",
         hoverColor: "#C8C079"
+    },
+    {
+        name: "freetail hackers",
+        date: "feb. 2025 - present",
+        title: "tech co-director",
+        description: "• improving our hackathon platform",
+        role: "tech co-director",
+        org: "freetail hackers",
+        url: "https://freetailhackers.com/",
+        hoverColor: "#000000",
+        hoverBg: "white"
     },
     {
         name: "aramco",
         date: "may 2025 - aug. 2025",
         title: "software engineer intern",
         description: "• built a RAG pipeline for hundreds of documents",
-        role: "prev. swe intern",
+        role: "prev swe intern",
         org: "aramco",
         url: "https://www.aramco.com/en",
         hoverColor: "#3eb458"
-    },
-    {
-        name: "freetail hackers",
-        date: "feb. 2025 - present",
-        title: "software engineer",
-        description: "• pushing code to rodeo, our hackathon platform",
-        role: "software engineer",
-        org: "freetail hackers",
-        url: "https://freetailhackers.com/",
-        hoverColor: "#000000",
-        hoverBg: "white"
     },
     {
         name: "UT Austin 🤘🏽",

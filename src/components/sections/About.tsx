@@ -4,6 +4,12 @@ import React from 'react'
 import { timeline } from '@/data/data';
 export default function About() {
 
+    console.log(timeline)
+
+    const role = timeline.slice(0, timeline.length - 1).reverse()
+    role.push(timeline[timeline.length - 1])
+    console.log(role.reverse())
+
     return (
         <div className='flex flex-col gap-4 sm:gap-6'>
             <div className='flex flex-col'>
@@ -36,7 +42,7 @@ export default function About() {
             </div>
             {<p className="max-w-full z-10 lg:max-w-2/3 text-white/70 text-base sm:text-lg">
                 i'm currently studying{' '}
-                {[...timeline].reverse().map((exp, index) => {
+                {[...role].map((exp, index) => {
                     return (
                         <React.Fragment key={index}>
                             <span className="text-white">{exp.role}</span> @{' '}

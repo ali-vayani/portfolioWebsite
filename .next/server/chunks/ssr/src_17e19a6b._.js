@@ -270,35 +270,45 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$ico
 ;
 const timeline = [
     {
+        name: "Stripe",
+        date: "summer '26",
+        title: "software engineer intern",
+        description: "• incoming",
+        role: "incoming swe intern",
+        org: "stripe",
+        url: "https://stripe.com",
+        hoverColor: "#6772e5"
+    },
+    {
         name: "MyMosque",
         date: "may. 2025 - present",
-        title: "founder & tech lead",
+        title: "founder & engineer",
         description: "• bringing communities together",
-        role: "tech lead",
+        role: "swe",
         org: "mymosque",
         url: "https://mymosque.app",
         hoverColor: "#C8C079"
+    },
+    {
+        name: "freetail hackers",
+        date: "feb. 2025 - present",
+        title: "tech co-director",
+        description: "• improving our hackathon platform",
+        role: "tech co-director",
+        org: "freetail hackers",
+        url: "https://freetailhackers.com/",
+        hoverColor: "#000000",
+        hoverBg: "white"
     },
     {
         name: "aramco",
         date: "may 2025 - aug. 2025",
         title: "software engineer intern",
         description: "• built a RAG pipeline for hundreds of documents",
-        role: "prev. swe intern",
+        role: "prev swe intern",
         org: "aramco",
         url: "https://www.aramco.com/en",
         hoverColor: "#3eb458"
-    },
-    {
-        name: "freetail hackers",
-        date: "feb. 2025 - present",
-        title: "software engineer",
-        description: "• pushing code to rodeo, our hackathon platform",
-        role: "software engineer",
-        org: "freetail hackers",
-        url: "https://freetailhackers.com/",
-        hoverColor: "#000000",
-        hoverBg: "white"
     },
     {
         name: "UT Austin 🤘🏽",
@@ -378,7 +388,7 @@ const tech = [
             color: "#007396"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 139,
+            lineNumber: 149,
             columnNumber: 14
         }, this),
         link: "https://www.java.com/",
@@ -392,7 +402,7 @@ const tech = [
             color: "#3776AB"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 146,
+            lineNumber: 156,
             columnNumber: 14
         }, this),
         link: "https://www.python.org/",
@@ -406,7 +416,7 @@ const tech = [
             color: "#3178C6"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 153,
+            lineNumber: 163,
             columnNumber: 14
         }, this),
         link: "https://www.typescriptlang.org/",
@@ -421,7 +431,7 @@ const tech = [
             color: "#087EA4"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 161,
+            lineNumber: 171,
             columnNumber: 14
         }, this),
         link: "https://react.dev/",
@@ -435,7 +445,7 @@ const tech = [
             color: "white"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 168,
+            lineNumber: 178,
             columnNumber: 14
         }, this),
         link: "https://nextjs.org/",
@@ -449,7 +459,7 @@ const tech = [
             color: "#FF3E00"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 175,
+            lineNumber: 185,
             columnNumber: 14
         }, this),
         link: "https://svelte.dev/",
@@ -463,7 +473,7 @@ const tech = [
             color: "#06B6D4"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 182,
+            lineNumber: 192,
             columnNumber: 14
         }, this),
         link: "https://tailwindcss.com/",
@@ -477,7 +487,7 @@ const tech = [
             color: "white"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 189,
+            lineNumber: 199,
             columnNumber: 14
         }, this),
         link: "https://expo.dev/",
@@ -492,7 +502,7 @@ const tech = [
             color: "#6DB33F"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 197,
+            lineNumber: 207,
             columnNumber: 14
         }, this),
         link: "https://spring.io/projects/spring-boot",
@@ -506,7 +516,7 @@ const tech = [
             color: "#339933"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 204,
+            lineNumber: 214,
             columnNumber: 14
         }, this),
         link: "https://nodejs.org/",
@@ -521,7 +531,7 @@ const tech = [
             color: "#47A248"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 212,
+            lineNumber: 222,
             columnNumber: 14
         }, this),
         link: "https://www.mongodb.com/",
@@ -535,7 +545,7 @@ const tech = [
             color: "#FFCA28"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 219,
+            lineNumber: 229,
             columnNumber: 14
         }, this),
         link: "https://firebase.google.com/",
@@ -549,7 +559,7 @@ const tech = [
             color: "#2D3748"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 226,
+            lineNumber: 236,
             columnNumber: 14
         }, this),
         link: "https://www.prisma.io/",
@@ -564,7 +574,7 @@ const tech = [
             color: "#EE4C2C"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 234,
+            lineNumber: 244,
             columnNumber: 14
         }, this),
         link: "https://pytorch.org/",
@@ -579,7 +589,7 @@ const tech = [
             color: "white"
         }, void 0, false, {
             fileName: "[project]/src/data/data.tsx",
-            lineNumber: 242,
+            lineNumber: 252,
             columnNumber: 14
         }, this),
         link: "https://www.unrealengine.com/",

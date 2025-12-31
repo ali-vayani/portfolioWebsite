@@ -36,8 +36,8 @@ const stats: StatItem[] = [
     },
     { 
         label: "on spotify", 
-        value: "86,726 mins", 
-        description: "the weeknd, the marias, weston estate, and sooo much more...",
+        value: "100,941 mins", 
+        description: "the weeknd, the marias, saint levant, and sooo much more...",
         colorScheme: {
             primary: "from-green-400",
             secondary: "to-emerald-400",
