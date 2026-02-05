@@ -284,16 +284,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$ico
 ;
 ;
 const timeline = [
-    {
-        name: "Stripe",
-        date: "summer '26",
-        title: "software engineer intern",
-        description: "• incoming",
-        role: "incoming swe intern",
-        org: "stripe",
-        url: "https://stripe.com",
-        hoverColor: "#6772e5"
-    },
+    // {
+    //     name: "Stripe",
+    //     date: "summer '26",
+    //     title: "software engineer intern",
+    //     description: "• incoming",
+    //     role: "incoming swe intern",
+    //     org: "stripe",
+    //     url: "https://stripe.com",
+    //     hoverColor: "#6772e5",
+    // },
     {
         name: "MyMosque",
         date: "may. 2025 - present",
