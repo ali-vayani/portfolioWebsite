@@ -2,20 +2,18 @@
 import { Github, Linkedin } from "lucide-react";
 import { motion } from 'framer-motion';
 import Link from "next/link";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function NavBar() {
     const pathname = usePathname();
-    console.log(pathname)
-    const [currSection, setCurrSection] = useState(pathname);
     const navItems = [
         {path: "/", label:"home"},
         {path: "/tech", label:"tech"},
+        {path: "/blog", label:"blog"},
     ]
 
     return (
-        <header className="flex items-center justify-between px-4 sm:px-8 md:px-15 mt-5">
+        <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between border-b border-white/10 bg-black/50 px-4 py-4 backdrop-blur-md sm:px-8 md:px-15">
             <h1 className="text-2xl sm:text-3xl md:text-4xl w-1/3">vayani</h1>
             <div className="flex w-1/3 justify-center">
             {navItems.map((item) => {
@@ -23,12 +21,11 @@ export default function NavBar() {
                         <Link
                             href={item.path}
                             key={item.path}
-                            onClick={() => setCurrSection(item.path)}
                             className={`text-lg sm:text-xl hover:cursor-pointer relative z-0 px-2 sm:px-4 py-1
-                                ${currSection == item.path ? 'text-white' : 'text-white/70 hover:text-white'}`}
-                        > 
+                                ${(item.path === "/" ? pathname === "/" : pathname.startsWith(item.path)) ? 'text-white' : 'text-white/70 hover:text-white'}`}
+                        >
                         {item.label}
-                        {currSection == item.path && (
+                        {(item.path === "/" ? pathname === "/" : pathname.startsWith(item.path)) && (
                             <motion.div
                                 layoutId="navbar-indicator"
                                 className="absolute inset-0 rounded-sm -z-5 bg-neutral-800"

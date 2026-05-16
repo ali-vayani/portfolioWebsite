@@ -121,6 +121,21 @@
     background: black;
     color: white;
   }
+  ::selection {
+    background: white;
+    color: black;
+  }
+  .brand-link {
+    color: color-mix(in srgb, var(--brand-color, white) 55%, transparent);
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: color-mix(in srgb, var(--brand-color, white) 25%, transparent);
+    transition: color 150ms, text-decoration-color 150ms;
+  }
+  .brand-link:hover {
+    color: var(--brand-color, white);
+    text-decoration-color: color-mix(in srgb, var(--brand-color, white) 55%, transparent);
+  }
 }
 
 
@@ -131,6 +146,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .star {

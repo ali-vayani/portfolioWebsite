@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         <Starfield />
         <NavBar/>
-        {children}
+        <main className="pt-[4.5rem]">{children}</main>
         <Footer/>
       </body>
     </html>
