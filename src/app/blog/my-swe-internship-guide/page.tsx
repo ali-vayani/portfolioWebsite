@@ -41,7 +41,7 @@ export default function SWEInternshipGuide() {
                   guide
                 </span>
                 <span className="text-white/20 text-xs">·</span>
-                <span className="text-white/30 text-xs font-mono">May 2025</span>
+                <span className="text-white/30 text-xs font-mono">May 2026</span>
                 <span className="text-white/20 text-xs">·</span>
                 <span className="text-white/30 text-xs font-mono">~10 min read</span>
               </div>
