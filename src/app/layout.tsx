@@ -10,7 +10,8 @@ const lexend = Lexend({
 
 export const metadata: Metadata = {
   title: "ali vayani",
-  description: "welcome",
+  description:
+    "cs @ ut austin • incoming summer 2026 swe intern @ stripe • building impactful tech",
 };
 
 export default function RootLayout({
